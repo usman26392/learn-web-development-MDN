@@ -27,8 +27,16 @@ let myHeading1 = document.querySelector("h1");
 
 function setUserName() {
     let myName = prompt("Please enter your name.");
-    localStorage.setItem("name", myName);
-    myHeading1.textContent = "This is from function :" + myName;
+    if(!myName) { 
+      /* agar user empty Ok karay ga ya fr Cancel karay ga,
+      toh if condition true hoja hay gi. jis ki waja say dobara
+      function call hoja hay ga. */
+      
+       setUserName();
+    } else {
+      localStorage.setItem("name", myName);
+      myHeading1.textContent = "This is from function :" + myName;
+    }
  }
 
  if(!localStorage.getItem("name")) {
