@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title></title>
+        <title>My test page</title>
         <style>
             body,
             * {
@@ -60,7 +60,77 @@
             <a href="https://www.mozilla.org/" title="My favorite website"target="_blank"> favorite website</a>.
         </p>
         
-          <!-- end of elements attributes -->
+        <!-- end of elements attributes -->
+      
+        <!-- =================== Boolean attributes ==================== -->
+        <h2>Boolean attributes</h2>
+        <input type="text"> <!-- without attribute -->
+
+        <input type="text" disabled="disabled"> <!-- attribute with value -->
+        <input type="text" disabled>  <!-- attribute without value -->
+        <!-- =================== Boolean attributes ==================== -->
+
+
+        <!-- ================== omitting/leave/forget quotes around attributes values ============ -->
+        <h2>attributes without quotes</h2>
+        <a href="https://www.mozilla.org" title="The Mozilla homepage">favorite website</a>
+        <br>
+
+        <!-- below title with without quotes  -->
+        <!-- this is wrong way -->
+        <a href="https://www.mozilla.org" title=The Mozilla homepage>favorite website with without quotes</a>
+        <br>
+
+        <!-- magar kuch attributes humay without quotes b allow kartay hayn
+        maslan href ka website ho , magar fr sath koi or attribute nai hona chayey -->
+        <a href=https://www.mozilla.org >favorite website with without quotes</a>
+        <br>
+
+        <!-- ================== omitting/leave/forget quotes around attributes values ============ -->
+
+        <!-- =========== single or double quotes ===================== -->
+        <h2>Single or double quotes</h2>
+        <a href="">A link to my example</a><br>
+        <a href=''>A link to my example</a><br>
+        
+        <!-- jub hummay quotes may quotes  istamaal karnay hun -->
+        <a href="" title="Isn't this fun">A link to my example</a><br>
+        <a href="" title="Isn&#39;t this fun">A link to my example</a> <!-- better way-->
+        <!-- =========== single or double quotes ===================== -->
+
+
+        <!-- ========== whitespace in HTML ========== -->
+        <h2>White Spaces in HTML</h2>
+        <p>There are five colors</p>
+          
+        <!-- sirf aik space character  layta hay HTML parser -->
+        <p>There       are     
+            five                      
+            colors
+        </p>
+        
+        <!-- magar hum sath hi character entity -->
+        <p>There &#160;&#160;&#160; are <br> five <br> colors</p>
+        <!-- ========== whitespace in HTML ========== -->
+
+        <!-- ================= special character in HTML ========== -->
+        <h2>Special characters in HTML </h2>
+        <p>In HTML , you define a paragraph using the <p> element.</p>
+        <p>In HTML , you define a paragraph using the &lt;p&gt; element.</p>
+
+        <p> This is simple less than  and greater < > than</p>
+
+        <!-- ================= special character in HTML ========== -->
+
+
+        <!-- ================ HTML comments ============ -->
+        <h2>HTML comments</h2>
+        <p>This is not inside a comment</p>
+
+        <!--<p>This is a comment.</p> -->
+        <!-- ================ HTML comments ============ -->
+
+
 
     </body>
 </html>
