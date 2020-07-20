@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Responsive HTML images demo</title>
+    <style>
+
+      img {
+        width: 320px;
+      }
+
+    </style>
+  </head>
+  <body>
+        
+        
+        <!-- Resolution switching: same size , different resolution  -->
+        <!-- ye kaam hum tab kartay hayn, jub resolution different devices
+            k liyey set karni hun, maslan: apple devices k liyey humay high resolution 
+            ki zarorat hoti hay  -->
+        <!-- nechay example may, high resolution par elva-fairy-640w.jpg
+            display hogi, matalab agar hum iphone , imac par daykay   -->
+        
+        
+
+        <img srcset="elva-fairy-320w.jpg,
+                     elva-fairy-480w.jpg 1.5x,
+                     elva-fairy-640w.jpg 2x"
+             src="elva-fairy-640w.jpg" alt="Elva dressed as a fairy"> 
+
+        
+  </body>
+</html>

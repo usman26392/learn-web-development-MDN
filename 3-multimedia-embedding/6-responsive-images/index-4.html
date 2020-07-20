@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Direction</title>
+    <style>
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Art direction -->
+        <picture>
+          <source media="(max-width: 799px)" srcset="images/elva-480w-close-portrait.jpg">
+          <source media="(min-width: 800px)" srcset="images/elva-800w.jpg">
+          <img src="images/elva-800w.jpg" alt="Chris standing up holding his daughter Elva">
+        </picture>
+        
+        <!-- This is not suitable for mobiles -->
+        <img src="images/elva-800w.jpg" alt="">
+</body>
+</html>
