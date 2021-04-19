@@ -1,0 +1,142 @@
+/* font-family: 'Courgette', cursive; */
+
+
+html {
+    font-size: 62.5%;
+    --border-color: #8193b2;
+    --text-color: #b1bac4;
+}
+
+
+body {
+    font-family: 'Courgette', cursive;
+    font-weight: 400;
+    background-color: #000;
+    color: var(--text-color);
+    word-wrap: anywhere;
+    font-size: 1.8rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+a {
+    color: var(--text-color);
+}
+
+a:hover {
+    color: var(--text-color);
+}
+
+main {
+    padding: 0 1rem;
+}
+
+
+/* styling for left side of the CV */
+
+.cv-img {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3rem 0;
+    border-bottom: 2px solid var(--border-color);
+    position: relative;
+}
+
+
+.cv-img .left-cross-btn {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    cursor: pointer;
+}
+
+.left-cross-btn svg {
+    width: 40px;
+    height: 40px;
+}
+
+.cv-img img {
+    flex: 0 1 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+main .col-lg-9 {
+    border-left: 2px solid var(--border-color);
+}
+
+
+.cv-contacts {
+    padding: 1rem 0;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.cv-contacts h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1.6rem;
+}
+
+.cv-contacts ul {
+    list-style-type: none;
+}
+  
+.cv-contacts li a {
+    padding: 0 0 0 1rem;
+}
+
+.cv-contacts li {
+    display: flex;
+    align-items: baseline;
+    padding: 1rem 0;
+}
+
+
+.cv-contacts li svg {
+    width: 16px;
+    height: 16px;
+}
+
+
+.cv-catagory-links ul {
+    list-style-type: none;
+  }
+
+  .cv-catagory-links li {
+    display: flex;
+    align-items: baseline;
+    padding: 1rem 0;
+  }
+  
+  .cv-catagory-links li a {
+    padding: 0 0 0 1rem;
+  }
+
+  .cv-catagory-links {
+    padding: 1rem 0;
+  }
+
+  
+.main-left-content-wrapper {
+    position: sticky;
+    top: 0;
+}
+
+
+.hidden {
+    /* transform: translateX(-400px); */
+    transform: scale(0);
+    transition: transform .3s linear;
+    
+}
+
+
+
